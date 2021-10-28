@@ -1,3 +1,3 @@
 FROM rclone/rclone:latest
 
-CMD ["rcd","--rc-web-gui","--rc-addr=localhost:80","--rc-user=admin","--rc-pass=sudo"]
+CMD ["rcd","--rc-web-gui","--rc-addr=0.0.0.0:80","--rc-user=admin","--rc-pass=sudo"]
