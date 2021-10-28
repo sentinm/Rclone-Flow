@@ -16,3 +16,5 @@ jobs:
           docker_heroku_process_type: web
           stack: "container"
           region: "us"
+        env:
+          HD_PORT: ${{secrets.PORT}}
