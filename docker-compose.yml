@@ -3,7 +3,7 @@ version: "1.0"
 services:
   app:
     build: .
-    command: bash install.sh
+    command: rclone --rcd --rc-web-gui
     restart: on-failure
     ports:
       - "5572:5572"
