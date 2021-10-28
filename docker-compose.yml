@@ -3,7 +3,7 @@ version: "1.4"
 services:
   app:
     build: .
-    command: rcd --rc-web-gui --rc-user=admin --rc-pass=sudo
+    command: node run.js
     restart: on-failure
     ports:
       - "5572:5572"
