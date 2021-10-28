@@ -1,3 +1,1 @@
-FROM rclone/rclone:latest
-
-CMD ["rcd","--rc-web-gui"]
+RUN curl https://rclone.org/install.sh | sudo bash
