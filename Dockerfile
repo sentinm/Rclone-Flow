@@ -1,3 +1,3 @@
 FROM rclone/rclone:latest
 
-CMD ["bash","run.sh"]
+CMD ["rcd","--rc-web-gui"]
