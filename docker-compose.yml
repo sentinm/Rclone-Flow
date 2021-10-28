@@ -3,7 +3,7 @@ version: "1.0"
 services:
   app:
     build: .
-    command: rclone --rcd --rc-web-gui
+    command: rclone --version
     restart: on-failure
     ports:
       - "5572:5572"
