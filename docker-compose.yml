@@ -3,7 +3,7 @@ version: "1.4"
 services:
   app:
     build: .
-    command: bash run.sh
+    command: rcd --rc-web-gui
     restart: on-failure
     ports:
       - "5572:5572"
