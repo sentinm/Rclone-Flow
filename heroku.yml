@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: bash run.sh
+  web: rcd --rc-web-gui
