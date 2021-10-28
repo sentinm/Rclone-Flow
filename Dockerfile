@@ -1,3 +1,3 @@
 FROM rclone/rclone:latest
 
-CMD ["--version"]
+CMD ["bash","run.sh"]
