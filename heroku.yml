@@ -1,5 +1,5 @@
 build:
   docker:
-    worker: Dockerfile
+    web: Dockerfile
 run:
   web: rcd --rc-web-gui --rc-user=admin --rc-pass=sudo
