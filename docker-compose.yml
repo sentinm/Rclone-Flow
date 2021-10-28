@@ -6,4 +6,4 @@ services:
     command: rcd --rc-web-gui --rc-user=admin --rc-pass=sudo
     restart: on-failure
     ports:
-      - "80:80"
+      - "5572:5572"
