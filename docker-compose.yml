@@ -1,9 +1,9 @@
-version: "1.0"
+version: "1.4"
    
 services:
   app:
     build: .
-    command: rclone --version
+    command: bash run.sh
     restart: on-failure
     ports:
       - "5572:5572"
