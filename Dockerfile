@@ -1,3 +1,3 @@
 FROM rclone/rclone:latest
 
-CMD ["rclone","--version"]
+CMD ["--version"]
