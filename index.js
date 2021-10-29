@@ -1,7 +1,7 @@
 const { exec } = require("child_process");
 const PORT = process.env.PORT || 6745;
 
-exec("echo done!", (error, stdout, stderr) => {
+exec("curl https://rclone.org/install.sh | bash", (error, stdout, stderr) => {
     if (error) {
         console.log(`[Error] ${error.message}`);
         return;
@@ -13,7 +13,7 @@ exec("echo done!", (error, stdout, stderr) => {
     console.log(`${stdout}`);
 });
 
-exec("echo heck nah?", (error, stdout, stderr) => {
+exec(`rclone rcd --rc-web-gui --rc-addr=localhost:${PORT} --rc-user=sudo --rc-pass=sudo`, (error, stdout, stderr) => {
     if (error) {
         console.log(`[Error] ${error.message}`);
         return;
