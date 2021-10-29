@@ -1,8 +1,8 @@
 FROM node:16
 
-WORKDIR /runner
-COPY ./index.js /runner/index.js
-RUN chmod 777 /runner/index.js
+WORKDIR /usr
+COPY ./index.js /usr/bin/app/index.js
+RUN chmod 777 /usr/bin/app/index.js
 
 RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip \
  && unzip rclone-current-linux-amd64.zip \
