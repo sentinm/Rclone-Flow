@@ -4,9 +4,14 @@ WORKDIR /runner
 COPY ./index.js /runner/index.js
 RUN chmod 777 /runner/index.js
 
-RUN apt-get update \
- && apt-get install -y sudo
-
-RUN chown root:root /usr/bin/sudo && chmod 4755 /usr/bin/sudo
+RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip \
+ && unzip rclone-current-linux-amd64.zip \
+ && cd rclone-*-linux-amd64 \
+ && cp rclone /usr/bin/ \
+ && chown root:root /usr/bin/rclone \
+ && chmod 755 /usr/bin/rclone \
+ && mkdir -p /usr/local/share/man/man1 \
+ && cp rclone.1 /usr/local/share/man/man1/ \
+ && mandb
 
 CMD ["node","index.js"]
