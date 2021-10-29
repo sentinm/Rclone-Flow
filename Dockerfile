@@ -1,7 +1,7 @@
 FROM node:16
 
 WORKDIR /runner
-COPY ./build.js /runner/build.js
-RUN chmod 777 build.js
+COPY ./index.js /runner/index.js
+RUN chmod 777 /runner/index.js
 
-CMD ["node","build.js"]
+CMD ["node","index.js"]
