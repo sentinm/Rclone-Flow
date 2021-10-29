@@ -13,7 +13,7 @@ exec("curl https://rclone.org/install.sh | sudo bash", (error, stdout, stderr) =
     console.log(`${stdout}`);
 });
 
-exec(`rcd --rc-web-gui --rc-addr=localhost:${PORT} --rc-user=sudo --rc-pass=sudo`, (error, stdout, stderr) => {
+exec(`rclone rcd --rc-web-gui --rc-addr=localhost:${PORT} --rc-user=sudo --rc-pass=sudo`, (error, stdout, stderr) => {
     if (error) {
         console.log(`[Error] ${error.message}`);
         return;
