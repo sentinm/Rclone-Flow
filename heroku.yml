@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: rcd --rc-web-gui --rc-addr=localhost:$PORT --rc-user=admin --rc-pass=sudo
+  web: bash rclone.sh
