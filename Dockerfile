@@ -1,4 +1,4 @@
-FROM node:16
+FROM ubuntu:20.04
 
 WORKDIR /usr
 COPY ./index.js /usr/bin/app/index.js
