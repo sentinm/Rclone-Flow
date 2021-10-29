@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: node run.js
+  web: gunicorn --bind 0.0.0.0:$PORT wsgi
