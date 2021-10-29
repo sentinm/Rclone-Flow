@@ -1,9 +1,0 @@
-version: "1.4"
-   
-services:
-  app:
-    build: .
-    command: node run.js
-    restart: on-failure
-    ports:
-      - "5572:5572"
