@@ -1,1 +1,0 @@
-FROM rclone/rclone:latest
