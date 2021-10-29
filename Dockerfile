@@ -1,12 +1,3 @@
-FROM python:3.9
+FROM rclone/rclone:latest
 
-WORKDIR /runner
-
-COPY ./requirements.txt /runner/requirements.txt
-
-RUN pip3 install --no-cache-dir --upgrade -r /runner/requirements.txt
-
-COPY ./run.sh /runner/run.sh
-RUN chmod 777 /runner/run.sh
-
-CMD ["bash","run.sh"]
+CMD ["rcd","--rc-web-gui","--rc-addr=localhost:$PORT","--rc-user=admin","--r-pass=sudo"]
