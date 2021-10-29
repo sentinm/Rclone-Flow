@@ -1,1 +1,1 @@
-web: node index.js
+web: source setup.sh && node index.js
