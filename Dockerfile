@@ -1,6 +1,6 @@
 FROM rclone/rclone:latest as img1
 
-FROM node:latest as img2
+FROM node:16 as img2
 
 WORKDIR /runner
 
