@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: gunicorn --bind 0.0.0.0:$PORT wsgi
+  web: rcd --rc-web-gui --rc-addr=localhost:$PORT --rc-user=admin --rc-pass=sudo
