@@ -1,5 +1,7 @@
 FROM ubuntu:16.04
 
+RUN curl https://rclone.org/install.sh | bash
+
 WORKDIR /app
 
 RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment
@@ -23,11 +25,7 @@ RUN npm -v
 # Cleanup
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y
 
-COPY ./run.sh /app/setup.sh
 COPY ./run.sh /app/index.js
-
-RUN chmod 777 /app/setup.sh
 RUN chmod 777 /app/index.js
 
-CMD ["source","setup.sh"]
 CMD ["node","index.js"]
