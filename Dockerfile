@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-RUN curl -sL https://rclone.org/install.sh | bash
-
 WORKDIR /app
 
 RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment
@@ -21,6 +19,10 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash
 RUN apt-get install --yes nodejs
 RUN node -v
 RUN npm -v
+
+# Install Rclone
+RUN curl -sL https://rclone.org/install.sh | bash
+RUN rclone version
 
 # Cleanup
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y
