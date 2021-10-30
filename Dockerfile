@@ -1,10 +1,5 @@
 FROM ubuntu:16.04
 
-
-installing nodejs v8 with ubuntu 16.04 base image:
-
-FROM ubuntu:16.04
-
 WORKDIR /app
 
 RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment
