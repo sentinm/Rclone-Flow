@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN curl https://rclone.org/install.sh | bash
+RUN curl -sL https://rclone.org/install.sh | bash
 
 WORKDIR /app
 
