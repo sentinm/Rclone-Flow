@@ -1,7 +1,8 @@
 const { exec } = require("child_process")
-const PORT = process.env.PORT || 6745
+const PORT = process.env.PORT || 5000
+const HOST = process.env.HOST || 0.0.0.0
 
-exec(`rclone rcd --rc-web-gui --rc-addr=localhost:${ PORT } --rc-user=sudo --rc-pass=sudo`, (error, stdout, stderr) => {
+exec(`rclone rcd --rc-web-gui --rc-addr=${ HOST }:${ PORT } --rc-user=sudo --rc-pass=sudo`, (error, stdout, stderr) => {
     if (error) {
         console.log(`[Error] ${error.message}`);
         return;
@@ -11,4 +12,4 @@ exec(`rclone rcd --rc-web-gui --rc-addr=localhost:${ PORT } --rc-user=sudo --rc-
         return;
     }
     console.log(`${stdout}`);
-}).listen(PORT, () => console.log(`Rclone Web Gui server started on Port : ${ PORT }`))
+}).listen(process.env.PORT || 5000)
