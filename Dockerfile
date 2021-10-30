@@ -31,4 +31,4 @@ RUN chmod 777 /app/run.sh
 RUN chmod 777 /app/setup.sh
 RUN chmod 777 /app/index.js
 
-CMD ["bash","/app/run.sh"]
+CMD ["bash","run.sh"]
