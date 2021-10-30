@@ -27,7 +27,7 @@ RUN rclone version
 # Cleanup
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y
 
-COPY ./run.sh /app/index.js
+COPY ./index.js /app/index.js
 RUN chmod 777 /app/index.js
 
 CMD ["node","index.js"]
