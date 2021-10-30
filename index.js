@@ -12,4 +12,4 @@ exec(`rclone rcd --rc-web-gui --rc-addr=${ HOST }:${ PORT } --rc-user=sudo --rc-
         return;
     }
     console.log(`${stdout}`);
-}).listen(process.env.PORT || 5000)
+})
