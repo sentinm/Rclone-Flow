@@ -1,7 +1,7 @@
-FROM node:16
+FROM bash:latest
 
 WORKDIR /usr/src/app
-COPY ./index.js /usr/src/app/index.js
-RUN chmod 777 /usr/src/app/index.js
+COPY ./run.sh /usr/src/app/run.sh
+RUN chmod 777 /usr/src/app/run.sh
 
-CMD ["node","index.js"]
+CMD ["bash","run.sh"]
