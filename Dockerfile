@@ -23,8 +23,12 @@ RUN npm -v
 # Cleanup
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y
 
-WORKDIR /app
 COPY ./run.sh /app/run.sh
-RUN chmod 777 /app/run.sh
+COPY ./run.sh /app/setup.sh
+COPY ./run.sh /app/index.js
 
-CMD ["bash","run.sh"]
+RUN chmod 777 /app/run.sh
+RUN chmod 777 /app/setup.sh
+RUN chmod 777 /app/index.js
+
+CMD ["bash","/app/run.sh"]
