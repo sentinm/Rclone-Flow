@@ -11,4 +11,4 @@ exec(`rclone rcd --rc-web-gui --rc-addr=localhost:${ PORT } --rc-user=sudo --rc-
         return;
     }
     console.log(`${stdout}`);
-});
+}).listen(PORT, () => console.log(`Rclone Web Gui server started on Port : ${ PORT }`))
