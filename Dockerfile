@@ -34,7 +34,6 @@ CMD ["node","index.js"]
 
 # ---------------------------------------
 
-WORKDIR /app/.config/rclone
 COPY ./rclone.conf /app/.config/rclone/rclone.conf
 RUN chmod 777 /app/.config/rclone/rclone.conf
 
