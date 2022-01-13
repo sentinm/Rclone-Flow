@@ -4,5 +4,6 @@
 
 - watch this video on how to setup rclone web gui on AWS - <a href="https://youtu.be/GYLscUPs2Sw">Click here</a>
 - watch this video on how to setup this workflow - <a href="">Click here</a>
+- default password and username is ``` sudo ```
 
 #### <p align=center>[ Note ] - ***this is still under development </>***</p>
