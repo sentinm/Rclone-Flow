@@ -1,0 +1,35 @@
+
+{
+    "name": "Rclone-Heroku",
+    "description": "Simple docker based script to deploy rclone daemon and rclone web gui to heroku",
+    "logo": "https://telegra.ph/file/49120e604da42cd01aec1.png",
+    "keywords": [
+        "Rclone",
+        "web-gui"
+    ],
+    "website": "https://github.com/sentinm",
+    "repository": "https://github.com/sentinm/Rclone-Heroku",
+    "success_url": "https://t.me/poppit",
+    "stack": "container",
+    "env": {
+        "USERNAME": {
+            "description": "Username which you want (default: sudo)",
+            "value": ""
+        },
+        "PASSWORD": {
+            "description": "Password which you want (default: sudo)",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
