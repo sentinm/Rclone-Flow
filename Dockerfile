@@ -38,8 +38,9 @@ COPY ./getconf.js /app/getconf.js
 RUN chmod 777 /app/getconf.js
 
 CMD ["node","getconf.js"]
+RUN sleep 15
 
-COPY ./rclone.conf /app/.config/rclone/rclone.conf
-RUN chmod 777 /app/.config/rclone/rclone.conf
+#COPY ./rclone.conf /app/.config/rclone/rclone.conf
+#RUN chmod 777 /app/.config/rclone/rclone.conf
 
 # THE END
