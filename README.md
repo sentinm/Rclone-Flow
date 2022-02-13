@@ -6,9 +6,16 @@
 - watch this video on how to setup this workflow - <a href="">will be soon</a>
 - default password and username is ``` sudo ```
 
+# Configuration
+- `CONFIG_FILE_URL` - Upload your ***rclone.conf*** file to <a href="https://t.me/DirectLinkGeneratorbot/">@DirectLinkGeneratorbot</a> (we just need a direct link to access it)
+- `USERNAME` - Any self specified username.
+- `PASSWORD` - Any self specified password.
+
 # Deployment
-- Fork this repository and upload your pre-generated "rclone.conf" file
+- Generate your rclone.conf file locally from this <a href="http://www.youtube.com/watch?v=n8qghZC1Kuc">video.</a> (if you have a rclone.conf file skip this step)
+
 - Just click deploy button, fill envs and deploy it. 
+
 - Go to resources tab and check if the dyno is on if it isn't just turn it on and click view app from more options menu. 
 
 # Notes
