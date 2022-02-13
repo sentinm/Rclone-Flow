@@ -14,11 +14,13 @@
     "env": {
         "USERNAME": {
             "description": "Username which you want (default: sudo)",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "PASSWORD": {
             "description": "Password which you want (default: sudo)",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "CONFIG_FILE_URL": {
             "description": "Hosted server url of rclone.conf file which you have pre-configured",
