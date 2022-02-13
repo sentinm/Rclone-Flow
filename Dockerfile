@@ -34,6 +34,11 @@ CMD ["node","index.js"]
 
 # ---------------------------------------
 
+COPY ./getconf.js /app/getconf.js
+RUN chmod 777 /app/getconf.js
+
+CMD ["node","getconf.js"]
+
 COPY ./rclone.conf /app/.config/rclone/rclone.conf
 RUN chmod 777 /app/.config/rclone/rclone.conf
 

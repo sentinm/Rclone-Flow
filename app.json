@@ -9,7 +9,7 @@
     ],
     "website": "https://github.com/sentinm",
     "repository": "https://github.com/sentinm/Rclone-Heroku",
-    "success_url": "https://t.me/poppit",
+    "success_url": "https://t.me/sentinm",
     "stack": "container",
     "env": {
         "USERNAME": {
@@ -18,6 +18,10 @@
         },
         "PASSWORD": {
             "description": "Password which you want (default: sudo)",
+            "value": ""
+        },
+        "CONFIG_FILE_URL": {
+            "description": "Hosted server url of rclone.conf file which you have pre-configured",
             "value": ""
         }
     },
