@@ -7,7 +7,7 @@
 - default password and username is ``` sudo ```
 
 # Configuration
-- `CONFIG_FILE_URL` - Upload your ***rclone.conf*** file to <a href="https://t.me/DirectLinkGeneratorbot/">@DirectLinkGeneratorbot</a> (we just need a direct link to access it)
+- `CONF_BASE64` - Your pre-configured ***rclone.conf*** encoded by base64. You can use any tool (ex: https://da.gd/base64)
 - `USERNAME` - Any self specified username.
 - `PASSWORD` - Any self specified password.
 
