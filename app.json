@@ -14,13 +14,13 @@
     "env": {
         "USERNAME": {
             "description": "Username which you want (default: admin)",
-            "value": "",
-            "required": false
+            "value": "admin",
+            "required": true
         },
         "PASSWORD": {
             "description": "Password which you want (default: admin)",
-            "value": "",
-            "required": false
+            "value": "admin",
+            "required": true
         },
         "CONF_BASE64": {
             "description": "Your pre-configured rclone.conf encoded by base64. You can use any tool (ex: https://da.gd/base64)",
