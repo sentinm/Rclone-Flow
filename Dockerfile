@@ -17,5 +17,6 @@ RUN curl -sL https://rclone.org/install.sh | bash
 RUN rclone version
 
 ADD run.sh /app/
+RUN chmod a+x /app/run.sh
 
 CMD ["./run.sh"]
