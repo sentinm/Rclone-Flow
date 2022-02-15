@@ -5,6 +5,7 @@ WORKDIR /app
 ENV USERNAME=admin
 ENV PASSWORD=admin
 ENV CONF_BASE64="" 
+ENV RCLONE_CONFIG=/app/.conf/rclone.conf
 
 RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment
 RUN echo "LANG=en_US.UTF-8" >> /etc/environment
