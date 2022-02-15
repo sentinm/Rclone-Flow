@@ -28,11 +28,6 @@
             "required": true
         }
     },
-    "buildpacks": [
-        {
-            "url": "heroku/nodejs"
-        }
-    ],
     "formation": {
         "web": {
             "quantity": 1,
