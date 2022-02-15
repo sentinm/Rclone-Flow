@@ -13,18 +13,19 @@
     "stack": "container",
     "env": {
         "USERNAME": {
-            "description": "Username which you want (default: sudo)",
+            "description": "Username which you want (default: admin)",
             "value": "",
             "required": false
         },
         "PASSWORD": {
-            "description": "Password which you want (default: sudo)",
+            "description": "Password which you want (default: admin)",
             "value": "",
             "required": false
         },
-        "CONFIG_FILE_URL": {
-            "description": "Hosted server url of rclone.conf file which you have pre-configured",
-            "value": ""
+        "CONF_BASE64": {
+            "description": "Your pre-configured rclone.conf encoded by base64. You can use any tool (ex: https://da.gd/base64)",
+            "value": "",
+            "required": true
         }
     },
     "buildpacks": [
