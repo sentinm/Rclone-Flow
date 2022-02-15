@@ -17,8 +17,6 @@ RUN apt-get install curl git unzip zip -y
 RUN curl -sL https://rclone.org/install.sh | bash
 RUN rclone version
 
-RUN base64 --help
-
 ADD run.sh /app/
 RUN chmod a+x /app/run.sh
 RUN mkdir /app/.config/
