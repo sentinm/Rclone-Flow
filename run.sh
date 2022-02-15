@@ -3,6 +3,7 @@
 echo "[INFO] test"
 
 if [ "$CONF_BASE64" != "" ]; then
+  echo "[TEST] $CONF_BASE64" 
   echo $CONF_BASE64 | base64 -d > /app/.conf/rclone.conf
   chmod +x /app/.config/rclone.conf
   echo "[INFO] Rclone config file decoded!"
