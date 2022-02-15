@@ -1,7 +1,7 @@
 const { exec } = require("child_process");
 const CONFIG_FILE_URL = process.env.CONFIG_FILE_URL;
 
-exec(`wget "${ CONFIG_FILE_URL }"`, (error, stdout, stderr) => {
+exec(`wget "${ CONFIG_FILE_URL }" -O /app/.config/rclone.conf`, (error, stdout, stderr) => {
     if (error) {
         console.log(`[Error] ${error.message}`);
         return;
