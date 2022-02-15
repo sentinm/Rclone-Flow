@@ -18,5 +18,6 @@ RUN rclone version
 
 ADD run.sh /app/
 RUN chmod a+x /app/run.sh
+RUN mkdir /app/.config/
 
 CMD ["./run.sh"]
