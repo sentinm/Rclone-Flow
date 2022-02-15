@@ -11,7 +11,7 @@ RUN echo "NODE_ENV=development" >> /etc/environment
 RUN more "/etc/environment"
 
 RUN apt-get update
-RUN apt-get install curl git -y
+RUN apt-get install curl git unzip zip -y
 
 RUN curl -sL https://rclone.org/install.sh | bash
 RUN rclone version
