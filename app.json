@@ -9,7 +9,7 @@
     ],
     "website": "https://github.com/sentinm",
     "repository": "https://github.com/sentinm/Rclone-Heroku",
-    "success_url": "https://t.me/sentinm",
+    "success_url": "",
     "stack": "container",
     "env": {
         "USERNAME": {
