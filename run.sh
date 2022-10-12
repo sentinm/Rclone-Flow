@@ -1,7 +1,7 @@
 #! /bin/bash -eu
 
 if [ "$CONF_BASE64" != "" ]; then
-  mkdir /app/.config/
+  mkdir -p /app/.config/
   echo $CONF_BASE64 | base64 -d > /app/.config/rclone.conf
   chmod +x /app/.config/rclone.conf
   echo "[INFO] Rclone config file decoded!"
