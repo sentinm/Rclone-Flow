@@ -1,0 +1,10 @@
+version: "1.2"
+   
+services:
+  rclone-flow:
+    build: .
+    command: bash run.sh
+    restart: on-failure
+    ports:
+      - "$PORT:53682"
+      - "5572:53682"
