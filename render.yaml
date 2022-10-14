@@ -2,7 +2,7 @@ services:
   - type: web
     name: Rclone-Flow
     env: docker
-    regio: singapore
+    region: singapore
     plan: free
     branch: main
     dockerfilePath: ./Dockerfile
