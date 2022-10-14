@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: Rclone-Flow
+    env: docker
+    regio: singapore
+    plan: free
+    branch: main
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: CONF_BASE64
+      - key: USERNAME
+        value: admin
+      - key: PASSWORD
+        value: admin
+      
