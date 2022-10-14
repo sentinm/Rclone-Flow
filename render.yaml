@@ -9,6 +9,7 @@ services:
     autoDeploy: true
     envVars:
       - key: CONF_BASE64
+        value: 
       - key: USERNAME
         value: admin
       - key: PASSWORD
