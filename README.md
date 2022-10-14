@@ -23,6 +23,5 @@
 # Notes
 - Your ***rclone.conf*** file is a must and there is no way to generate new configs for some oath systems like google drive from web gui. ***(<a href="https://github.com/rclone/rclone-webui-react/issues/43">issue on github of web-gui</a>)***
 - After they fixed it I just need to register ```53682``` port on heroku and it will be solved! 
-- ```This is still under development :D```
 <br>
 <p align=center><a href="https://www.reddit.com/u/poppitxd/"><img src="https://telegra.ph/file/c4d5c54694f322ff91079.png" width="140"></a></p>
