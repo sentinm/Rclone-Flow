@@ -1,4 +1,5 @@
-# <img src="https://user-images.githubusercontent.com/79321771/195789948-1525abaa-8247-40e0-9807-dd20f458bf0f.png">
+<p align=center><img src="https://img.shields.io/badge/!-Inactively%20Maintained-red"></p>
+<p align=center><img src="https://user-images.githubusercontent.com/79321771/195789948-1525abaa-8247-40e0-9807-dd20f458bf0f.png"></p>
 <b>Simple docker based workflow to run a rclone server on heroku any vps (only which supports docker). Also this is running rclone web gui as a user interface, so it's very easy to use this</b>
 
 - watch this video on how to setup rclone web gui on AWS - <a href="https://youtu.be/GYLscUPs2Sw">Click here</a>
