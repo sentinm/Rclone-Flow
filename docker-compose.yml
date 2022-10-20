@@ -8,3 +8,7 @@ services:
     ports:
       - "$PORT:53682"
       - "5572:53682"
+    environment:
+     - USERNAME=$USERNAME
+     - PASSWORD=$PASSWORD
+     - CONF_BASE64=$CONF_BASE64
