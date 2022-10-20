@@ -3,6 +3,7 @@ version: "3.3"
 services:
   rclone-flow:
     build: .
+    container_name: rclone-gui
     command: bash run.sh
     restart: on-failure
     ports:
