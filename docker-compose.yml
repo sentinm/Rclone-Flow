@@ -1,10 +1,15 @@
-version: "1.2"
+version: "3.3"
    
 services:
   rclone-flow:
     build: .
+    container_name: rclone-gui
     command: bash run.sh
     restart: on-failure
     ports:
       - "$PORT:53682"
       - "5572:53682"
+    environment:
+     - USERNAME=$USERNAME
+     - PASSWORD=$PASSWORD
+     - CONF_BASE64=$CONF_BASE64
