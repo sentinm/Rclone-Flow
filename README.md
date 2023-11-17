@@ -16,9 +16,11 @@
 
 - Just click the specific deploy button, continue the process as given.
 
-<p>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀<a href="https://render.com/deploy?repo=https://github.com/sentinm/Rclone-Flow"><img src="https://render.com/images/deploy-to-render-button.svg" width="200"></a> <img src="https://github.com/sentinm/Rclone-Flow/assets/79321771/db1813d3-14d1-4dd0-be9f-237b4d62a65d"></p>
-<p align=center><a href="https://heroku.com/deploy?template=https://github.com/sentinm/Rclone-Flow/"><img src="https://www.herokucdn.com/deploy/button.svg" width="200"></a></p>
-<p align=center><a href="https://railway.app/new/template/lmBc3q"><img src="https://railway.app/button.svg" width="200"></a></p>
+<p align=left><a href="https://render.com/deploy?repo=https://github.com/sentinm/Rclone-Flow"><img src="https://render.com/images/deploy-to-render-button.svg" width="200"></a> <img src="https://github.com/sentinm/Rclone-Flow/assets/79321771/db1813d3-14d1-4dd0-be9f-237b4d62a65d"></p>
+<p align=left><a href="https://heroku.com/deploy?template=https://github.com/sentinm/Rclone-Flow/"><img src="https://www.herokucdn.com/deploy/button.svg" width="200"></a></p>
+<p align=left><a href="https://railway.app/new/template/lmBc3q"><img src="https://railway.app/button.svg" width="200"></a></p>
+
+<p><i>Correction indicates that it's the recomended way</i></p>
 
 # Notes
 - Your ***rclone.conf*** file is a must and there is no way to generate new configs for some oath systems like google drive from web gui. ***(<a href="https://github.com/rclone/rclone-webui-react/issues/43">issue on github of web-gui</a>)***
